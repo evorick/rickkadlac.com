@@ -24,3 +24,8 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+
+// I added this to keep the date updated to the current year
+$('#copyright_date').html(new Date().getFullYear());
