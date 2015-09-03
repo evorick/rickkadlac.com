@@ -19,7 +19,7 @@ $(function() {
             }
             $.ajax({
                 url: "//formspree.io/rick@rickkadlac.com",
-                // url: "././mail/contact_me.php",
+                // url: "././mail/contact_me.php",    //    Original code, just in case I switch to a non-GitHub pages hosting option.
                 type: "POST",
                 data: {
                     name: name,
