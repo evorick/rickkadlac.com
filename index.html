@@ -384,6 +384,45 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
+
+    <script>
+      // Please use Strings, Numbers, or Bools for value types.
+      window.pendo_options = {
+        apiKey: 'd9d4bdb0-3d93-49b5-611f-dd39f9b95751',
+
+         // If you load your user info asynchronously, set this to true
+         usePendoAgentAPI: false,
+
+        visitor: {
+          id:              'VISITOR-UNIQUE-ID'   // Required if user is logged in
+          // email:        // Optional
+          // role:         // Optional
+
+          // You can add any additional visitor level key-values here,
+          // as long as it's not one of the above reserved names.
+        },
+
+        account: {
+          // id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
+          // name:         // Optional
+          // planLevel:    // Optional
+          // planPrice:    // Optional
+          // creationDate: // Optional
+
+          // You can add any additional account level key-values here,
+          // as long as it's not one of the above reserved names.
+        }
+      };
+      (function() {
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.async = true;
+          script.src = ('https:' === document.location.protocol ? 'https://' : 'http://' ) + 'd3accju1t3mngt.cloudfront.net/js/pa.min.js';
+          var firstScript = document.getElementsByTagName('script')[0];
+          firstScript.parentNode.insertBefore(script, firstScript);
+      })();
+    </script>
+
 </body>
 
 </html>
