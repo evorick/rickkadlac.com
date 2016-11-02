@@ -9,12 +9,12 @@
     <meta name="description" content="Rick Kadlac: Web Developer">
     <meta name="author" content="Rick Kadlac">
     
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!--     Google Tag Manager -->
+<!--     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WCQSJX');</script>
+    })(window,document,'script','dataLayer','GTM-WCQSJX');</script> -->
     <!-- End Google Tag Manager -->
 
     <meta name="google-site-verification" content="AOMQ7GRmmm8AiSIXjRBmcvGEKwKQHhK1GkvfEUaeF_8" />
@@ -50,8 +50,8 @@
 <body id="page-top" class="index">
     
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCQSJX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCQSJX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation -->
@@ -377,8 +377,41 @@
             </div>
         </div>
     </div>
+    
+    <script>
+      (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+      v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+      o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+      y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/d9d4bdb0-3d93-49b5-611f-dd39f9b95751/pendo.js';
+      z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
+      // Call this whenever information about your visitors becomes available
+      // Please use Strings, Numbers, or Bools for value types.
+      pendo.initialize({
+        apiKey: 'd9d4bdb0-3d93-49b5-611f-dd39f9b95751',
 
+        visitor: {
+          id:              'Rick_Visitor',   // Required if user is logged in
+          email:        'email'// Optional
+          // role:         // Optional
+
+          // You can add any additional visitor level key-values here,
+          // as long as it's not one of the above reserved names.
+        },
+
+        account: {
+          id:           'Rick_Account', // Highly recommended
+          name:         'account_name'// Optional
+          // planLevel:    // Optional
+          // planPrice:    // Optional
+          // creationDate: // Optional
+
+          // You can add any additional account level key-values here,
+          // as long as it's not one of the above reserved names.
+        }
+      });
+     </script>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
